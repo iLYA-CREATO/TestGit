@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class StartGane : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    public float sing = 1;
     void Update()
     {
-        
+        Mathf.Sin(sing);
+        transform.position += new Vector3(sing, sing, 0);
     }
 }
